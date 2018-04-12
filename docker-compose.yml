@@ -1,0 +1,27 @@
+version: '3'
+services:
+    fuseki:
+        build: ./fuseki
+        volumes:
+            - "./html:/var/www/html"
+        ports:
+            - "3030:3030"
+        restart: always
+        privileged: true
+        environment:
+            - COLUMNS=236
+            - LINES=66
+    symfony:
+        build: ./symfony
+        volumes:
+            - "./symfony/application:/var/www/html/application"
+        ports:
+            - "8000:8000"
+        restart: always
+        privileged: true
+        tty: true
+        environment:
+            - COLUMNS=236
+            - LINES=66
+
+
