@@ -9,13 +9,16 @@ This repository contains two submodules
 
 * [https://github.com/asanchez75/docker-apache-php7-mysql-symfony2](https://github.com/asanchez75/docker-apache-php7-mysql-symfony2)
 
-Then, once is cloned, run
+Run
 
-* ``git submodule init`` inside the main folder.
+```
+git clone --recurse-submodules https://github.com/asanchez75/docker-compose-symfony-fuseki.git
+```
 
-*  ``git submodule init`` inside the folder ``symfony``
+```
+git submodule update --remote
+```
 
 ### More info
 
 [https://git-scm.com/book/en/v2/Git-Tools-Submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules)
-
