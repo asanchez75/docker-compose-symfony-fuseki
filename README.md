@@ -9,8 +9,7 @@ This repository contains two submodules
 
 * [https://github.com/asanchez75/docker-apache-php7-mysql-symfony2](https://github.com/asanchez75/docker-apache-php7-mysql-symfony2)
 
-
-Then, once is cloned. Run
+Then, once is cloned, run
 
 * ``git submodule init`` inside the main folder.
 
